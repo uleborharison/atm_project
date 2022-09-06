@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf/8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="txt.css" type="text/css" />
+    <link rel="stylesheet" href="fontawesome-free-5.11.2-web (1)\fontawesome-free-5.11.2-web\css\all.css"
+        type="text/css" />
+
+    <title>ATM</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <!--header section-->
+        <div class="header">
+            <!--bank logo-->
+            <div class="logo">
+                <img src="banklogo.png" alt="" class="ims" />
+            </div>
+
+            <!--bank name-->
+            <div class="name">
+                <h1 class="name-b" id="">Datalinks Bank</h1>
+            </div>
+            <!--empty-->
+            <div class="empty"></div>
+        </div>
+
+        <!--body section-->
+        <div class="main">
+
+
+            <div>
+                <div class="pas" id="incard" style="display:block">
+                    <div>
+                        <h1 class="heading head1 pinTxt" id="">Please insert your card and press enter</h1>
+                        <div class="kind">
+                            <div class="kin"></div>
+                        </div>
+                    </div>
+
+                    <button class="btnk" id="slotEnter">Enter</button>
+                </div>
+            </div>
+
+            <div class="pas" id="pas" style="display:none">
+
+                <h1 class="heading head1 pinTxt" id="pinHeading">Please enter your pin</h1>
+
+                <div id="pinDiv" style="display:block;">
+                    <input type="password" id="pin1" placeholder="" class="pin" maxlength="4" />
+                    <button class="btnOK" id="btnEnter">Enter</button>
+                </div>
+                <div class="trans">
+                    <h3 id="pinMsg" class="heading head1" style="color:black"></h3>
+                </div>
+            </div>
+
+            <div class="buttons" style="display:none" id="btnsSecreen">
+                <div class="ple">
+                    <h1 class="heading hid">Please select your desired transactions</h1>
+                </div>
+                <div class="buttons-left">
+                    <button class="btn" id="withdarawal">
+                        <h1 class="btn-text bin"><i style="font-size:21px;margin-right:10px; color:black"
+                                class="fas fa-caret-right"></i>Cash Withdrawal</h1>
+                    </button>
+                    <button class="btn bin" id="billPay">
+                        <h1 class="btn-text bin"><i style="font-size:21px;margin-right:10px; color:black"
+                                class="fas fa-caret-right"></i>Bill Payment</h1>
+                    </button>
+                    <button class="btn" id="balanceInquiry">
+                        <h1 class="btn-text"><i style="font-size:21px;margin-right:10px; color:black"
+                                class="fas fa-caret-right"></i>Balance Inquiry</h1>
+                    </button>
+                </div>
+                <div class="buttons-right">
+                    <button class="btn" id="transfer">
+                        <h1 class="btn-text bin"><i style="font-size:21px;margin-right:10px; color:black"
+                                class="fas fa-caret-right"></i>Transfer</h1>
+                    </button>
+                    <button class="btn" id="deposit">
+                        <h1 class="btn-text bin"><i style="font-size:21px;margin-right:10px; color:black"
+                                class="fas fa-caret-right"></i>Deposit</h1>
+                    </button>
+                    <button class="btn bin" id="Exit">
+                        <h1 class="btn-text"><i style="font-size:21px;margin-right:10px; color:black"
+                                class="fas fa-caret-right"></i>Exit</h1>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="transcations trant" id="transactions" style="display:none">
+
+                <div class="trans">
+                    <h1 id="firstText" class="heading head1"></h1>
+                </div>
+
+                <div id="amounts" style="display:block">
+                    <input id="amountIn" type="number" placeholder="" class="pin" />
+                    <button class="btnOK" id="btnOK"><span id="num">Enter</span></button>
+                </div>
+                <div class="trans">
+                    <h3 id="secondText" class="heading head1"></h3>
+                </div>
+                <div class="trans">
+                    <h3 class="heading head1" id="amount"></span></h3>
+                </div>
+                <div class="trans"><a id="lin1" href="#">
+                        <h3 class="heading head1" id="back">Back to main screen</h3>
+                    </a></div>
+            </div>
+
+            <div class="transcations track" id="billPayDiv" style="display:none">
+
+                <div class="trans">
+                    <h1 id="firstText2" class="heading head1"></h1>
+                </div>
+                <div id="ref" style="display:block">
+                    <input id="reffIn" type="number" placeholder="" class="pin" />
+                    <button class="btnOK" id="btnReff"><span id="num">Enter</span></button>
+                </div>
+                <div id="billIn" style="display:none">
+                    <input id="amountIn2" type="number" placeholder="" class="pin" />
+                    <button class="btnOK" id="btnOK2"><span id="num">Submit</span></button>
+                </div>
+                <div class="trans">
+                    <h3 id="secondText2" class="heading head1"></h3>
+                </div>
+                <div class="trans">
+                    <h3 class="heading head1" id="amount2"></span></h3>
+                </div>
+                <div class="trans"><a id="lin2" href="#">
+                        <h3 class="heading head1" id="back">Back to main screen</h3>
+                    </a></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="txt.js">
+
+
+    </script>
+</body>
+
+</html>
